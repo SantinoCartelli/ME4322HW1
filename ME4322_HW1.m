@@ -154,7 +154,7 @@ FirstPositionJoints=table(jointNames,squeeze(pos(1,:,1))',squeeze(pos(1,:,2))',s
 disp(FirstPositionJoints)
 FirstPositionLinks=table(linkNames,omega(1,:)',alpha(1,:)',m',J','VariableNames',{'Link','omega_rad_s','alpha_rad_s2','mass_kg','J_kg_m2'});
 disp(FirstPositionLinks)
-FirstPositionCoM=table(linkNames,squeeze(comPos(1,:,1))',squeeze(comPos(1,:,2))',squeeze(comAcc(1,:,1))',squeeze(comAcc(1,:,2))''VariableNames',{'Link','CoM_x_m','CoM_y_m','CoM_ax_mps2','CoM_ay_mps2'});
+FirstPositionCoM=table(linkNames,squeeze(comPos(1,:,1))',squeeze(comPos(1,:,2))',squeeze(comAcc(1,:,1))',squeeze(comAcc(1,:,2))','VariableNames',{'Link','CoM_x_m','CoM_y_m','CoM_ax_mps2','CoM_ay_mps2'});
 disp(FirstPositionCoM)
 forceNames={'Ax';'Ay';'Bx';'By';'Cx';'Cy';'Dx';'Dy';'Ex';'Ey';'Fx';'Fy';'Gx';'Gy';'Tin'};
 FirstPositionForces=table(forceNames,Fstatic(1,:)',Fdynamic(1,:)','VariableNames',{'Quantity','Static','Dynamic'});
